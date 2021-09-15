@@ -741,11 +741,11 @@ class CustomerController extends Controller
         $companies_products = 
         DB::table('company')
         ->join('product', 'product.companyId', '=', 'company.id')
-        ->join('product_translation', 'product_translation.productId', '=', 'product.id')
+       // ->join('product_translation', 'product_translation.productId', '=', 'product.id')
         ->where('company.id', '=', $companyId )
         ->where('product.deleted_at', '=',  null )
         ->where('product.visible', '=', '1' )
-        ->where('product_translation.lang', '=', $lang )
+       // ->where('product_translation.lang', '=', $lang )
         ->select('*')
         ->get();
         return response()->json($companies_products);
