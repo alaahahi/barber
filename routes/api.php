@@ -40,7 +40,7 @@ Route::get('companies/{ids?}/{lang?}', [CustomerController::class, 'companies'])
 Route::get('search/{q?}/{lang?}', [CustomerController::class, 'search']);
 Route::get('categories/{lang?}', [CustomerController::class, 'categories']);
 Route::get('categories/{categoryId?}/companies/{lang?}', [CustomerController::class, 'categories_companies']);
-Route::get('companies/{companyId?}/products/{lang?}', [CustomerController::class, 'companies_products']);
+Route::get('companies/{companyId?}/products', [CustomerController::class, 'companies_products']);
 Route::get('home/{lang?}', [CustomerController::class, 'home']);
 Route::get('user_point/{moblie?}', [CustomerController::class, 'user_point']);
 Route::post('orders/{moblie?}', [CustomerController::class, 'orders']);
