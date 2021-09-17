@@ -40,7 +40,7 @@ Route::get('companies/{ids?}/{lang?}', [CustomerController::class, 'companies'])
 Route::get('search/{q?}/{lang?}', [CustomerController::class, 'search']);
 Route::get('categories/{lang?}', [CustomerController::class, 'categories']);
 Route::get('categories/{categoryId?}/companies/{lang?}', [CustomerController::class, 'categories_companies']);
-Route::get('companies/{companyId?}/products', [CustomerController::class, 'companies_products']);
+//Route::get('companies/{companyId?}/products', [CustomerController::class, 'companies_products']);
 Route::get('home/{lang?}', [CustomerController::class, 'home']);
 Route::get('user_point/{moblie?}', [CustomerController::class, 'user_point']);
 Route::post('orders/{moblie?}', [CustomerController::class, 'orders']);
@@ -54,4 +54,5 @@ Route::get('edit_user_info/{moblie?}/{name?}', [CustomerController::class, 'edit
 Route::get('app_config/', [CustomerController::class, 'app_config']);
 Route::delete('removorder/{id?}', [CustomerController::class, 'removorder']);
 Route::get('feedbackorder/{id?}/{rating?}/{comment?}', [CustomerController::class, 'feedbackorder']);
-
+//new 
+Route::get('details/{companyId?}', [CustomerController::class, 'companies_products']);

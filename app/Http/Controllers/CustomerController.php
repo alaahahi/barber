@@ -736,7 +736,7 @@ class CustomerController extends Controller
         return response()->json($categories_companies);
         
     }
-    public function companies_products(Request $request ,$companyId )
+    public function companies_products(Request $request ,$companyId)
     { 
         $companies_products = 
         DB::table('company')
