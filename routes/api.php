@@ -56,3 +56,4 @@ Route::delete('removorder/{id?}', [CustomerController::class, 'removorder']);
 Route::get('feedbackorder/{id?}/{rating?}/{comment?}', [CustomerController::class, 'feedbackorder']);
 //new 
 Route::get('details/{companyId?}', [CustomerController::class, 'companies_products']);
+Route::get('slider/', [CustomerController::class, 'slider']);
