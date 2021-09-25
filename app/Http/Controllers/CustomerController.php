@@ -1016,6 +1016,7 @@ class CustomerController extends Controller
     public function slider(Request $request )
     { 
         $slider = DB::table('slider')->get();
-        return response()->json(['status'=>true,'code'=>200,'message'=>'successfully','data' => $slider])->setStatusCode(200);
+        return response()->json($slider);
+        //return response()->json(['status'=>true,'code'=>200,'message'=>'successfully','data' => $slider])->setStatusCode(200);
     }
 }
