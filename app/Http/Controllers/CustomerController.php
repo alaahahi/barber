@@ -1021,8 +1021,8 @@ class CustomerController extends Controller
     }
     public function price(Request $request )
     { 
-        $slider = DB::table('price')->get();
-        return response()->json($slider);
+        $price = DB::table('card')->get();
+        return response()->json($price);
         //return response()->json(['status'=>true,'code'=>200,'message'=>'successfully','data' => $slider])->setStatusCode(200);
     }
 }
