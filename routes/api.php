@@ -57,3 +57,4 @@ Route::get('feedbackorder/{id?}/{rating?}/{comment?}', [CustomerController::clas
 //new 
 Route::get('details/{companyId?}', [CustomerController::class, 'companies_products']);
 Route::get('slider/', [CustomerController::class, 'slider']);
+Route::get('price/', [CustomerController::class, 'price']);

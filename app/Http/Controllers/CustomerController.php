@@ -1019,4 +1019,10 @@ class CustomerController extends Controller
         return response()->json($slider);
         //return response()->json(['status'=>true,'code'=>200,'message'=>'successfully','data' => $slider])->setStatusCode(200);
     }
+    public function price(Request $request )
+    { 
+        $slider = DB::table('price')->get();
+        return response()->json($slider);
+        //return response()->json(['status'=>true,'code'=>200,'message'=>'successfully','data' => $slider])->setStatusCode(200);
+    }
 }
